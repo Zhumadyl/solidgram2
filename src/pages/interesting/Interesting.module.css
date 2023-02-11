@@ -1,0 +1,29 @@
+.parent {
+    display: flex;
+    height: 100%;
+    margin-left: 400px;
+    width: 100%;
+}
+
+.child img {
+    width: 280px;
+    height: 280px;
+    animation: fade .5s linear forwards;
+    z-index: 1;
+    
+}
+
+
+.flex{
+    display: flex;
+}
+.wrapper{
+    width: 500px;
+}
+.child{
+    background: #000;
+    margin: 15px;
+}
+.child img:hover{
+    opacity: 0.6;
+}

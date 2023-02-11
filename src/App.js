@@ -1,23 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import PrivateRoute from "./components/routes/PrivateRoute";
+import PublicRoute from "./components/routes/PublicRoute";
+import ChatPage from "./pages/chatPage/ChatPage";
+import HomePage from "./pages/homePage/HomePage";
+import Interesting from "./pages/interesting/Interesting";
+import LoginPage from "./pages/loginPage/LoginPage";
 
 function App() {
+  const [isAuth, setAuth] = useState(true);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        {/* TODO: protect our routes */}
+        <Route
+          path="/"
+          element={
+            <PrivateRoute isAuth={isAuth}>
+              <HomePage />
+            </PrivateRoute>
+          }
+        />
+        <Route path="/post/:id" element={<HomePage />} />
+        <Route path="/interesting2" element={<Interesting />} />
+        <Route path="/reels" element={<HomePage />} />
+        <Route
+          path="/chat"
+          element={
+            <PrivateRoute isAuth={isAuth}>
+              <ChatPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <PublicRoute isAuth={isAuth}>
+              <LoginPage />
+            </PublicRoute>
+          }
+        />
+        <Route
+          path="/interesting2"
+          element={
+            <PrivateRoute isAuth={isAuth}>
+              <Interesting />
+            </PrivateRoute>
+          }
+        />
+      </Routes>
     </div>
   );
 }

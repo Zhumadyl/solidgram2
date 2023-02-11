@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+
+
+.bar{
+    grid-area: b;
+}
+.chat{
+    width: 900px;
+    background-color: aqua;
+    height: 94vh;
+    margin-right: 170px;
+    margin-left: 150px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    'h h h h c c c c c c  '
+    'l l l l c c c c c c'
+    'l l l l c c c c c c '
+    'l l l l c c c c c c '
+    'l l l l c c c c c c '
+    ;
+    margin-left: 400px;
+}
+.chatHead{
+    grid-area: h;
+    background-color: antiquewhite;
+    width: 350px;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+.chatHead div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.listUsers{
+    grid-area: l;
+    background-color: brown;
+    width: 350px;
+    height: 85vh;
+    overflow: auto;;
+    font-family: 'Itim', cursive;
+}
+.chatContent{
+    grid-area: c;
+    background-color: blue;
+    width: 600px;
+}
+
+.body{
+    display: flex;
+}

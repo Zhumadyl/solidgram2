@@ -1,0 +1,41 @@
+.headPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.headPart a{
+    color: #0074cc;;
+    font-size: 13px;
+}
+.flex, .flexit{
+    display: flex;
+    align-items: center;
+    grid-gap: 10px;
+    text-align: start;
+    justify-content: space-between;
+}
+
+.recPeople{
+    display: flex;
+    justify-content: space-between;
+}
+.recPeople a {
+    color: black;
+}
+
+.p{
+    font-size: 12px;
+}
+
+.flexit{
+    padding-top: 10px;
+}
+.border img{
+    border: 1px solid black;
+    border-radius: 200px;
+}
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
