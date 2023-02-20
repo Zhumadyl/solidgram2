@@ -3,7 +3,7 @@ import c from './Input.module.css'
 
 function Input(props) {
   return (
-    <label>
+    <label className={c.wrapper}>
         <input className={c.input} {...props} />
     </label>
   )

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import PostDetailPage from "./components/postDetailPage/PostDetailPage";
 import PrivateRoute from "./components/routes/PrivateRoute";
 import PublicRoute from "./components/routes/PublicRoute";
 import ChatPage from "./pages/chatPage/ChatPage";
@@ -9,7 +10,7 @@ import Interesting from "./pages/interesting/Interesting";
 import LoginPage from "./pages/loginPage/LoginPage";
 
 function App() {
-  const [isAuth, setAuth] = useState(true);
+  const [isAuth, setAuth] = useState(false);
 
   return (
     <div className="App">
@@ -23,7 +24,7 @@ function App() {
             </PrivateRoute>
           }
         />
-        <Route path="/post/:id" element={<HomePage />} />
+        <Route path="/post/:id" element={<PostDetailPage/>} />
         <Route path="/interesting2" element={<Interesting />} />
         <Route path="/reels" element={<HomePage />} />
         <Route

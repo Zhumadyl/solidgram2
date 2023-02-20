@@ -14,7 +14,7 @@ function Post(props) {
         <img src={more} alt="" width='30px' />
       </div>
       <Link to={`/post/${props.id}`} className={css.image} >
-        <img
+        <img className={css.imgMain}
           src={props.image}
           alt="Image"
         />

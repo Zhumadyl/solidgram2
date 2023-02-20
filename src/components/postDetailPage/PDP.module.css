@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 80%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+}
+
+
+.comment{
+    width: 50%;
+    height: 100%;
+}
+.content{
+    display: flex;
+    width: max-content;
+    height: max-content;
+    padding: 20px 0;
+    border: 2px solid black;
+    height: 100%;
+}
+
+.author{
+    display: flex;
+    border: 2px solid black;
+    grid-gap: 20px;
+    height: 7vh;
+    width: 100%;
+    align-items: center;
+    padding-left: 10px;
+}
+.author img:last-child{
+    margin-left: 64%;
+}
+
+.likes{
+    display: flex;
+    border: 2px solid black;
+    width: 100%;
+    grid-gap: 15px;
+    padding: 0 10px;
+}
+.likes img:last-child{
+    margin-left: auto;
+}
+
+.authorsWord{
+    display: flex;
+    grid-gap: 10px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
+.flex{
+    display: flex;
+}
+
+.time{
+    display: flex;
+    justify-content: baseline;
+    padding-left: 50px;
+}
+.comments{
+    height: 380px;
+    border: 2px solid black;
+
+}
+.liked{
+    display: grid;
+    justify-content: start;
+    padding: 0 10px;
+}
+.postFooter{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid black;
+    align-items: center;
+    margin-top: 20px;
+}   
+
+.postFooter input{
+    border: 0px;
+    text-decoration: none;
+    margin-left: -110px;
+    width: 170px;
+    outline: none;
+}
+.postFooter a{
+    color: rgb(47, 136, 188);
+}
