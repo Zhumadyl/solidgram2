@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/solidgram2/static/css/main.4ebf60d0.css",
+    "main.js": "/solidgram2/static/js/main.a5cab1c3.js",
+    "static/js/787.dcbdfa32.chunk.js": "/solidgram2/static/js/787.dcbdfa32.chunk.js",
+    "static/media/search.png": "/solidgram2/static/media/search.bf55c91bfd804ad85ed0.png",
+    "index.html": "/solidgram2/index.html",
+    "main.4ebf60d0.css.map": "/solidgram2/static/css/main.4ebf60d0.css.map",
+    "main.a5cab1c3.js.map": "/solidgram2/static/js/main.a5cab1c3.js.map",
+    "787.dcbdfa32.chunk.js.map": "/solidgram2/static/js/787.dcbdfa32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ebf60d0.css",
+    "static/js/main.a5cab1c3.js"
+  ]
+}
