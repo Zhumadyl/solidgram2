@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import PostDetailPage from "./components/postDetailPage/PostDetailPage";
 import PrivateRoute from "./components/routes/PrivateRoute";

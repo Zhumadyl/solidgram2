@@ -7,7 +7,7 @@ import css from "./HomePage.module.css";
 import Recomendation from "../../components/recomendation/Recomendation";
 
 
-function HomePage() {
+function HomePage() { 
   const [posts, setPosts] = useState([]);
   const [isLoading, setLoading] = useState(true);
 
